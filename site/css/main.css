@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lato', Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.title {
+  text-align: center;
+}
+
+.app-page {
+  width: auto;
+  padding: 20px;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "meetingnotes",
+  "version": "1.0.0",
+  "description": "Meeting Notes",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -f site --ss site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Enrico Sacchetti",
+  "license": "ISC"
+}
