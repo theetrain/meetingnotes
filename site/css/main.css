@@ -40,9 +40,14 @@ i {
   font-size: 1rem;
 }
 
-.notes-head input {
-  font-size: 1.5em;
-}
-.notes-head i {
+.notes-head_project input {
   font-size: 2em;
+}
+.notes-head_project label {
+  top: 30px;
+  font-size: 1.75em;
+}
+
+.notes-head_taker input {
+  font-size: 1.25em;
 }

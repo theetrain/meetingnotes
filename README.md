@@ -1,6 +1,8 @@
-Meeting Notes
+# Meeting Notes
 
 A free, open-source notes-taking web application designed for meetings.
+
+## Roadmap
 
 v0.1
 - easy data filling
@@ -15,4 +17,4 @@ Future:
 - email server
 - user accounts
 - recaptcha
-- responsive design
+- responsive designed

@@ -23,13 +23,51 @@
   <main id="app" class="app-page">
     <h1 class="title">{{ siteTitle }}</h1>
 
+    <!-- User Information -->
     <div class="notes-head">
-      <i class="material-icons">&#xE06F;</i>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="title">
-        <label class="mdl-textfield__label" for="title">Title</label>
+      <!-- Meeting Title -->
+      <div class="notes-head_project">
+        <i class="material-icons">&#xE06F;</i>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label notes-head_project">
+          <input class="mdl-textfield__input" type="text" id="title">
+          <label class="mdl-textfield__label" for="title">Title</label>
+        </div>
+      </div>
+
+      <!-- Notes Taker -->
+      <div class="notes-head_taker">
+        <i class="material-icons">&#xE55A;</i>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label notes-head_people">
+          <input class="mdl-textfield__input" type="text" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Notes Taker</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label notes-head_people">
+          <input class="mdl-textfield__input" type="email" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Email</label>
+        </div>
+      </div>
+
+      <!-- Participants -->
+      <div class="notes-head_people">
+        <i class="material-icons">&#xE7FB;</i>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label notes-head_people">
+          <input class="mdl-textfield__input" type="text" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Participant 1</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label notes-head_people">
+          <input class="mdl-textfield__input" type="email" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Email</label>
+        </div>
       </div>
     </div>
+
+    <!-- Notes -->
+    <div class="notes-body">
+
+    </div>
+
+
+    <!-- ### END OF PAGE ### -->
 
     <!-- Dependencies -->
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
