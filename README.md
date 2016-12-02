@@ -18,3 +18,19 @@ Future:
 - user accounts
 - recaptcha
 - responsive design
+
+## Contributing
+
+If you don't already have browser-sync install globally:
+
+>`npm install`
+
+Your options for running locally are:
+
+```js
+npm dev // run with browser-sync
+```
+
+```js
+npm start // run with node, production-like
+```

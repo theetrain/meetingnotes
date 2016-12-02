@@ -4,9 +4,13 @@
   "description": "Meeting Notes",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start -s -f site --ss site",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start -s -f site --ss site",
+    "start": "node index.js"
   },
   "author": "Enrico Sacchetti",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.2"
+  }
 }
