@@ -21,6 +21,10 @@ Future:
 
 ## Contributing
 
+Please discuss on an open issue or create a new one before forking, that way I can easily keep track of branches. Your participation is greatly appreciated, so I wouldn't want you to go through all the effort without confirming first!
+
+## Developing
+
 If you don't already have browser-sync install globally:
 
 >`npm install`

@@ -1,0 +1,9 @@
+{
+  "ecmaFeatures": {
+    "templateStrings": true
+  },
+
+  "rules": {
+    "quotes": 0
+  }
+}
