@@ -50,7 +50,9 @@
       <!-- Participants -->
       <div class="notes-head_people">
         <i class="material-icons">&#xE7FB;</i>
-        <div is="participant" v-for="(item, index) in participantList"></div>
+        <div class="participant-list">
+          <participant v-for="(item, index) in participantList" :index="index" :item="item"></participant>
+        </div>
       </div>
     </div>
 

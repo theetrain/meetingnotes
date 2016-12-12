@@ -51,3 +51,13 @@ i {
 .notes-head_taker input {
   font-size: 1.25em;
 }
+
+/* Participants */
+.notes-head_people > i:first-child {
+  position: relative;
+  top: 20px;
+  float: left;
+}
+.notes-head_people .participant-list {
+  float: left;
+}
