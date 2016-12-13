@@ -11,7 +11,7 @@
   <meta name="description" content="Make quick and easy notes for your meeting.">
   <meta name="author" content="Enrico Sacchetti"/>
 
-  <!-- Dependencies -->
+  <!-- Material Lite -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 
@@ -51,7 +51,9 @@
       <div class="notes-head_people">
         <i class="material-icons">&#xE7FB;</i>
         <div class="participant-list">
-          <participant v-for="(item, index) in participantList" :index="index" :item="item"></participant>
+          <template v-for="(item, index) in participantList">
+            <participant  :index="index" :item="item"></participant>
+          </template>
         </div>
       </div>
     </div>
@@ -64,7 +66,7 @@
 
     <!-- ### END OF PAGE ### -->
 
-    <!-- Dependencies -->
+    <!-- Material Lite -->
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
     <!-- Vue -->
