@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto');
 
 body {
+  min-height: 100%;
+  background-color: #666;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
 }
@@ -17,10 +19,15 @@ h1, h2, h3, h4 {
 .title {
   text-align: center;
 }
+h1.title {
+  background-color: #fff;
+  margin: 0;
+  padding: 0.5em 0;
+}
 
 .app-page {
   width: auto;
-  padding: 20px;
+  min-height: 100%;
 }
 
 /**
@@ -36,7 +43,17 @@ i {
  */
 
 /* Notes Head */
+[class^=notes-head_] {
+  display: flex;
+}
+[class^=notes-head_] > i:first-child {
+  align-self: center;
+}
 .notes-head {
+  min-height: calc(100%);
+  margin: 2em 1.5em;
+  padding: 1em;
+  background-color: #fff;
   font-size: 1rem;
 }
 
@@ -53,11 +70,6 @@ i {
 }
 
 /* Participants */
-.notes-head_people > i:first-child {
-  position: relative;
-  top: 20px;
-  float: left;
-}
 .notes-head_people .participant-list {
   float: left;
 }
