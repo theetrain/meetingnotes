@@ -42,19 +42,20 @@ i {
  * Notes
  */
 
+.notes-page {
+  min-height: calc(100%);
+  margin: 2em 1.5em;
+  padding: 1em;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
 /* Notes Head */
 [class^=notes-head_] {
   display: flex;
 }
 [class^=notes-head_] > i:first-child {
   align-self: center;
-}
-.notes-head {
-  min-height: calc(100%);
-  margin: 2em 1.5em;
-  padding: 1em;
-  background-color: #fff;
-  font-size: 1rem;
 }
 
 .notes-head_project input {
@@ -72,4 +73,12 @@ i {
 /* Participants */
 .notes-head_people .participant-list {
   float: left;
+}
+
+/**
+ * Notes body
+ */
+
+[class^=notes-body] {
+  margin: 2em 0;
 }

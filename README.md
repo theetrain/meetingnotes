@@ -18,6 +18,8 @@ Future:
 - user accounts
 - recaptcha
 - responsive design
+- save common attendees
+- follow-up on previous meetings that had 'todo' items
 
 ## Contributing
 

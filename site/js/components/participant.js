@@ -30,6 +30,7 @@ Vue.component('participant', {
     }
   },
 
+  /* eslint-disable */
   template: '\
     <div class="participant">\
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label notes-head_people">\

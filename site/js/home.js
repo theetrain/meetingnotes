@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-  const siteTitle = 'Meeting Notes'
+  var siteTitle = 'Meeting Notes'
   // var participantList = [
   //   {
   //     name: 'Rico',
@@ -17,11 +17,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }
   ]
 
-  new Vue({
+  var noteList = [
+    {
+      topic: '',
+      type: 'TODO'
+    }
+  ]
+
+  new Vue({ // eslint-disable-line
     el: '#app',
     data: {
       siteTitle: siteTitle,
-      participantList: participantList
+      participantList: participantList,
+      noteList: noteList
     }
   })
 })
