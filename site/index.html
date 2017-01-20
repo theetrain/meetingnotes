@@ -62,7 +62,14 @@
 
       <!-- Notes -->
       <section class="notes-body">
-        <table>
+        <table class="notes-table">
+          <tr>
+            <td>Topic</td>
+            <td>Type</td>
+            <td>Note</td>
+            <td>Owner</td>
+            <td>Date</td>
+          </tr>
           <template v-for="(item, index) in noteList">
             <noterow :item="item" :index="index"></noterow>
           </template>

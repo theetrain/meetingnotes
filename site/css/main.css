@@ -39,7 +39,7 @@ i {
 }
 
 /**
- * Notes
+ * Meeting Notes
  */
 
 .notes-page {
@@ -81,4 +81,30 @@ i {
 
 [class^=notes-body] {
   margin: 2em 0;
+  padding: 1em;
+  background-color: #ddd;
+}
+
+.notes-table input {
+  height: 100%;
+  border: 0;
+}
+
+.notes-table tr td {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+}
+
+/* Task type */
+.notes-table tr td:nth-of-type(2) {
+  min-width: 100px;
+}
+
+.notes-table .mdl-button {
+  width: 100%;
+  background-color: #fff;
+}
+.notes-table .mdl-button:hover {
+  background-color: #eee;
 }
