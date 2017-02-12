@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   var noteList = [
     {
-      topic: '',
       type: 'TODO'
     }
   ]

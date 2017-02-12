@@ -105,16 +105,26 @@ i {
   padding: 0 6px;
 }
 
+/* Dragger */
+.notes-table tr td:nth-of-type(1) {
+  width: 20px;
+}
+.notes-table tr td:nth-of-type(1) i {
+  margin: 0;
+  padding-top: 5px;
+  text-align: center;
+}
+
 /* Task type dropdown */
-.notes-table tr td:nth-of-type(2) {
+.notes-table tr td:nth-of-type(3) {
   width: 100px;
 }
 /* Owner */
-.notes-table tr td:nth-of-type(4) {
+.notes-table tr td:nth-of-type(5) {
   max-width: 60px;
 }
 /* Date */
-.notes-table tr td:nth-of-type(5) {
+.notes-table tr td:nth-of-type(6) {
   max-width: 70px;
 }
 
@@ -125,3 +135,9 @@ i {
 .notes-table .mdl-button:hover {
   background-color: #eee;
 }
+
+/* Button Colours */
+.notes-table .mdl-button.TODO {background-color: #9292be;}
+.notes-table .mdl-button.INFO {background-color: #c6bd4a;}
+.notes-table .mdl-button.DONE {background-color: #58c451;}
+.notes-table .mdl-button.DECISION {background-color: #be6e6e;}

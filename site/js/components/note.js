@@ -1,3 +1,5 @@
+/* globals moment */
+
 Vue.component('noterow', {
   props: [
     'index',
@@ -12,7 +14,8 @@ Vue.component('noterow', {
         'INFO',
         'DONE',
         'DECISION'
-      ]
+      ],
+      today: moment().format('L')
     }
   },
 
@@ -25,9 +28,8 @@ Vue.component('noterow', {
   methods: {
     addRow: function () {
       if (this.nextRowAdded) return
-      this.$parent.participantList.push({
-        name: '',
-        email: ''
+      this.$parent.noteList.push({
+        type: 'TODO'
       })
 
       // Reset material lite components
@@ -42,9 +44,10 @@ Vue.component('noterow', {
   /* eslint-disable */
   template: '\
     <tr>\
+      <td><i class="material-icons">drag_handle</i></td>\
       <td><input placeholder="Topic"/></td>\
       <td>\
-        <button :id="typeid" class="mdl-button mdl-js-button">\
+        <button :id="typeid" class="mdl-button mdl-js-button" :class="item.type">\
           {{ item.type }}\
         </button>\
         <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"\
@@ -54,9 +57,9 @@ Vue.component('noterow', {
           </li>\
         </ul>\
       </td>\
-      <td><input placeholder="Note"/></td>\
-      <td><input placeholder="Owner"/></td>\
-      <td><input placeholder="Date"/></td>\
+      <td><input placeholder="Note" v-on:keydown="addRow"/></td>\
+      <td><input placeholder="Name"/></td>\
+      <td><input :placeholder="today"/></td>\
     </tr>\
     '
 })
