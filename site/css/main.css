@@ -85,20 +85,37 @@ i {
   background-color: #ddd;
 }
 
-.notes-table input {
-  height: 100%;
-  border: 0;
+[class^=notes-table] {
+  width: 100%;
 }
 
 .notes-table tr td {
-  margin: 0;
-  padding: 0;
+  padding: 0 3px;
   border-spacing: 0;
 }
 
-/* Task type */
+.notes-table tr td > * {
+  height: 36px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.notes-table tr td input {
+  width: 100%;
+  padding: 0 6px;
+}
+
+/* Task type dropdown */
 .notes-table tr td:nth-of-type(2) {
-  min-width: 100px;
+  width: 100px;
+}
+/* Owner */
+.notes-table tr td:nth-of-type(4) {
+  max-width: 60px;
+}
+/* Date */
+.notes-table tr td:nth-of-type(5) {
+  max-width: 70px;
 }
 
 .notes-table .mdl-button {
