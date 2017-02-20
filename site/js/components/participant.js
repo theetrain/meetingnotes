@@ -24,9 +24,11 @@ Vue.component('participant', {
         email: ''
       })
 
-      // Reset material lite components
-      componentHandler.upgradeDom()
-      this.nextRowAdded = true
+      this.$nextTick(function () {
+        // Reset material lite components
+        componentHandler.upgradeDom()
+        this.nextRowAdded = true
+      })
     }
   },
 

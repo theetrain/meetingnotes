@@ -55,7 +55,12 @@ i {
   display: flex;
 }
 [class^=notes-head_] > i:first-child {
-  align-self: center;
+  position: relative;
+  align-self: flex-start;
+  top: 20px;
+}
+.notes-head_project > i:first-child {
+  top: 30px;
 }
 
 .notes-head_project input {

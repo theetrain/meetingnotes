@@ -72,7 +72,7 @@
             <td>Date</td>
           </tr>
           <template v-for="(item, index) in noteList">
-            <noterow :item="item" :index="index"></noterow>
+            <noterow :id="'note-' + index" :item="item" :index="index"></noterow>
           </template>
         </table>
       </section>

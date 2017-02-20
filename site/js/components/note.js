@@ -32,9 +32,11 @@ Vue.component('noterow', {
         type: 'TODO'
       })
 
-      // Reset material lite components
-      componentHandler.upgradeDom()
-      this.nextRowAdded = true
+      this.$nextTick(function () {
+        // Reset material lite components
+        componentHandler.upgradeDom()
+        this.nextRowAdded = true
+      })
     },
     changeType: function (newOption) {
       this.item.type = newOption
